@@ -1,0 +1,81 @@
+
+.noto-serif-normal {
+  font-family: "Noto Serif", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+/* shared style */
+
+.navber ,.banner{
+    max-width: 1140px;
+    margin: 0 auto;
+    background-color: bisque;
+}
+.navber{
+    height: 71px;
+}
+.navber{
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+}
+
+nav ul li {
+    list-style: none;
+}
+.home{
+    font-weight: 700;
+
+    
+}
+
+nav ul a{
+    text-decoration: none;
+    margin-right: 48px;
+    color: #000;
+    
+
+
+}
+.nav-list{
+    display: flex;
+    align-items: center;
+    
+}
+/* Banner */
+.banner{
+    display: flex;
+    margin-top: 100px;
+}
+.banner p{
+    color: rgba(0, 0, 0, 0.5);
+font-family: Inter;
+font-size: 22px;
+font-weight: 400;
+line-height: 27px;
+letter-spacing: 0%;
+text-align: left;
+}
+.banner img{
+
+width: 570px;
+height: 355px;
+
+}
+.banner-text{
+    background-color: aqua;
+    width: 570px;
+    height: 299px;
+    
+    
+}
+.banner h1{
+    font-size: 65px;
+    font-weight: 700;
+    margin: 0 0;
+    
+}
+
