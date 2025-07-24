@@ -63,19 +63,26 @@ text-align: left;
 
 width: 570px;
 height: 355px;
+margin-top: px;
+display: block;
 
 }
 .banner-text{
     background-color: aqua;
     width: 570px;
     height: 299px;
-    
+    margin-top: 55px;
     
 }
 .banner h1{
     font-size: 65px;
     font-weight: 700;
     margin: 0 0;
+    margin-top: 10px;
     
 }
+.banner p{
+    
+  margin-bottom: 12px;
 
+}
