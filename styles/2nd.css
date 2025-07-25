@@ -9,7 +9,7 @@
 }
 /* shared style */
 
-.navber ,.banner{
+.navber ,.banner, .card-container {
     max-width: 1140px;
     margin: 0 auto;
     background-color: bisque;
@@ -110,6 +110,7 @@ display: block;
     font-weight: 500px;
     font-size: 22px;
     
+    
 
 }
 .cart h5{
@@ -122,4 +123,20 @@ display: block;
 .cart p,h5{
     margin: 17px 0;
     line-height: 1.2;
+    
+    
+}
+.card{
+    
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+}
+.description{
+    justify-content: center;
+    text-align: center;
+    
+}
+.card-container{
+    margin-top: 80px;
 }
