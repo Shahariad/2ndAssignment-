@@ -47,6 +47,9 @@ nav ul a{
 }
 /* Banner */
 .banner{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+
     display: flex;
     margin-top: 100px;
 }
@@ -139,4 +142,57 @@ display: block;
 }
 .card-container{
     margin-top: 80px;
+}
+
+
+
+@media screen and (max-width: 393px) {
+    .navber {
+      flex-direction: column;
+        height: auto;
+        padding: 10px;
+        justify-content: center;
+        
+        
+    }
+    
+   
+
+    .nav-list {
+        flex-direction: column;
+    }
+
+    nav ul a {
+        margin: 10px 0;
+    }
+
+    .banner {
+        display: flex;
+        flex-direction: column-reverse; 
+        align-items: center;
+        margin-top: 50px;
+        text-align: center;
+    }
+
+    .banner-text, .banner img {
+        width: 100%;
+        max-width: 100%;
+        margin-top: 20px;
+    }
+
+    .banner h1 {
+        font-size: 32px;
+    }
+
+    .banner p {
+        font-size: 18px;
+    }
+
+    .card {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .cart {
+        max-width: 100%;
+    }
 }
