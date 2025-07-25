@@ -8,9 +8,75 @@
     "wdth" 100;
 }
 /* shared style */
+.navber,.banner{
+    width: 100%;
+    max-width: 1140px;
+    background-color: bisque;
+}
+/* NAVBER */
+.navber{
+    display: flex;
+    justify-content: space-between;
+    background-color: blueviolet;
+    
+}
+nav ul li{
+    list-style: none;
+}
+nav ul a{
+    text-decoration: none;
+    margin-right: 48px;
+    color: #000;
+
+}
+.home{
+    font-weight: 700;
+}
+
+/* BANNER */
+
+.banner{
+    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+   
+}
+
+.banner p{
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 22px;
+    font-weight: 400;
+    text-align: left;
+    
+}
+.banner h1{
+    font-size: 4rem;
+    font-weight: 700;
+    margin: 0,0;
+    margin-top: 5px;
+    margin-bottom: -20px;
+    
+}
+.banner-text{
+    margin-top: 55px;
+    
+}
+.banner img{
+    display: block;
+}
+.card-container{
+    width: 100%;
+    max-width: 1140px;
+    height: 100%;
+    max-height: 1187px;
+}
+
+
+.navber ,.banner, .card-container {
 .navber ,.banner, .card-container,.picture {
     max-width: 1140px;
     margin: 0 auto;
+    background-color: bisque;
     /* background-color: bisque; */
 }
 .navber{
@@ -28,32 +94,26 @@ nav ul li {
 .home{
     font-weight: 700;
 
-    
+
 }
 
 nav ul a{
     text-decoration: none;
     margin-right: 48px;
     color: #000;
-    
+
 
 
 }
 .nav-list{
     display: flex;
     align-items: center;
-    
+
 }
 /* Banner */
-.banner{
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
 
-    display: flex;
-    margin-top: 100px;
-}
 .banner p{
-    color: rgba(0, 0, 0, 0.5);
+    color: hsla(0, 0%, 0%, 0.5);
 font-family: Inter;
 font-size: 22px;
 font-weight: 400;
@@ -69,22 +129,22 @@ margin-top: px;
 display: block;
 
 }
-.banner-text{
+ .banner-text{
     background-color: aqua;
     width: 570px;
     height: 299px;
-    margin-top: 55px;
-    
-}
+    margin-top: px;
+
+} */
 .banner h1{
     font-size: 65px;
     font-weight: 700;
     margin: 0 0;
     margin-top: 10px;
-    
+
 }
 .banner p{
-    
+
   margin-bottom: 12px;
 
 }
@@ -92,12 +152,15 @@ display: block;
 .cart{
     width: 100%;
     background-color: bisque;
-    width: 270px;
-    height: 485px;
+    max-width: 270px;
+    height: 100%;
+    max-height: 485px;
     text-align: center;
+}
     margin: 0 auto;
 } */
 .cart img{
+    height: 323px;
     height: ;
 }
 .cart button{
@@ -107,14 +170,14 @@ display: block;
     border: none;
     color: rgb(255, 255, 255);
     font-weight: 700;
-    
-    
+
+
 }
 .cart p{
     font-weight: 500px;
     font-size: 22px;
-    
-    
+
+
 
 }
 .cart h5{
@@ -123,15 +186,15 @@ display: block;
 }
 
 
-    
+
 .cart p,h5{
     margin: 17px 0;
     line-height: 1.2;
-    
-    
+
+
 }
 .card{
-    
+
     display: grid;
     grid-template-columns: repeat(4,1fr);
     gap: 20px;
@@ -139,7 +202,7 @@ display: block;
 .description{
     justify-content: center;
     text-align: center;
-    
+
 }
 .card-container{
     margin-top: 80px;
@@ -239,25 +302,18 @@ display: block;
 
 @media screen and (max-width: 393px) {
     .navber {
-      flex-direction: column;
+      
         height: auto;
         padding: 10px;
-        justify-content: center;
-        
-        
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
     }
     .home,.hide{
         display: none;
     }
-   
 
-    .nav-list {
-        flex-direction: column;
-    }
 
-    nav ul a {
-        margin: 10px 0;
-    }
 
     .banner {
         display: flex;
@@ -286,8 +342,9 @@ display: block;
     }
 
     .cart {
-        max-width: 100%;
+        max-width: 50%;
     }
+}
 }
 @media screen and (max-width: 393px) {
   .picture {
